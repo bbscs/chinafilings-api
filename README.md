@@ -2,8 +2,9 @@
 
 **The China Equivalent of SEC EDGAR** — Real-time official **CNINFO** China A-share corporate filings (SSE / SZSE / BSE), classified into actionable trading events with **AI English investor impact takeaways, sentiment scores (`-1.0` to `+1.0`), direct PDF links**, and native **HTTPS Model Context Protocol (MCP)** support.
 
-- **Live HTTPS Demo & Portal**: https://appropriations-rocky-feels-releases.trycloudflare.com
-- **Interactive OpenAPI Docs**: https://appropriations-rocky-feels-releases.trycloudflare.com/docs
+- **Live HTTPS Demo & Portal**: https://filings.cnpulse.cn
+- **RapidAPI Marketplace**: https://rapidapi.com/liyangxiao/api/chinafilings-china-a-share-filings-event-signals
+- **Interactive OpenAPI Docs**: https://filings.cnpulse.cn/docs
 
 ## Key Features
 
@@ -22,7 +23,7 @@ Add this directly to **Cursor**, **Claude Desktop**, or any MCP client using the
 {
   "mcpServers": {
     "chinafilings": {
-      "url": "https://appropriations-rocky-feels-releases.trycloudflare.com/mcp",
+      "url": "https://filings.cnpulse.cn/mcp",
       "headers": {
         "X-API-Key": "cf_demo_public_readonly"
       }
@@ -35,5 +36,5 @@ Add this directly to **Cursor**, **Claude Desktop**, or any MCP client using the
 
 ```bash
 curl -H "X-API-Key: cf_demo_public_readonly" \
-  "https://appropriations-rocky-feels-releases.trycloudflare.com/v1/events?lang=en&limit=5"
+  "https://filings.cnpulse.cn/v1/events?lang=en&limit=5"
 ```
